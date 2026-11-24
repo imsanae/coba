@@ -1,0 +1,598 @@
+<!DOCTYPE html> <!--dokumen menggunakan standar HTML5-->
+<html lang="id"> <!--mementukan bahasa utama website-->
+<head> <!--Kertas kosong / lembar kerja-->
+  <meta charset="UTF-8" /> <!--agar font atau icon bisa terbaca (tidak eror)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--mengatur area tampilan, menyeseuaikan lebar sesuai perangkat, mengatur skala awal 100%-->
+  <title>Paris Explorer — Jelajahi Keindahan Kota Paris</title> <!--Judul tab / nama website-->
+  <meta name="description" content="Paris Explorer — Mengenal sejarah, menikmati pesona arsitektur, dan merasakan warisan budaya Paris yang mendunia." />
+  <!--membantu mesin pencari untuk memahami isi web dan menemukan hasil pencarian yang sesuai dengan deskripsi tersebut-->
+    <link rel="icon" type="img" href="assets/Tower.png">
+    <!--menghubungkan icon/logo, menampilkan icon/logo, alamat icon/logo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet" />
+  <!--mengambil font dari google, &  memabantu browser untuk mempersiapkan koneksi lebih awal ke server font sebelum halaman web tampil-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--menghubungkan antara HTML & CSS (pembangunan rumah)-->
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+          <nav class="logo">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/Tower.png" alt="logo" width="75px" height="60px"  >
+        </a>
+      <a href="#dashboard" class="logo" aria-label="Paris Explorer">
+          <path d="M24 2 L20 22 L14 38 H10 L8 50 H14 L12 60 H18 L17 70 H22 V78 H26 V70 H31 L30 60 H36 L34 50 H40 L38 38 H34 L28 22 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <line x1="14" y1="38" x2="34" y2="38" stroke="currentColor" stroke-width="1"/>
+          <line x1="12" y1="50" x2="36" y2="50" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        <span class="logo-text">
+          <span class="brand-line1">PARIS</span>
+          <span class="brand-line2">EXPLORER</span>
+        </span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navigasi utama">
+        <a href="#dashboard" class="nav-link active" data-target="dashboard">Beranda</a>
+        <a href="#paris"      class="nav-link" data-target="paris">Sejarah</a>
+        <a href="#wisata"     class="nav-link" data-target="wisata">Wisata</a>
+        <a href="#galeri"     class="nav-link" data-target="galeri">Galeri</a>
+        <a href="#berita"     class="nav-link" data-target="berita">Berita</a>
+        <a href="#kontak"     class="nav-link" data-target="kontak">Kontak</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================ 1. DASHBOARD ============================ -->
+  <section class="section section-dashboard" id="dashboard">
+    <div class="hero-bg" style="background-image:url('assets/Dashboard.png');"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-foliage-left"></div>
+
+    <div class="hero-content reveal">
+      <span class="hero-rule"></span>
+      <h1 class="hero-title">
+        <span class="line1">Jelajahi Keindahan</span>
+        <span class="line2">Kota Paris</span>
+      </h1>
+      <p class="hero-sub">
+        Mengenal sejarah, menikmati pesona arsitektur,<br />
+        dan merasakan warisan budaya yang mendunia.
+      </p>
+      <a href="#paris" class="btn-pill btn-hero">
+        Mulai Menjelajah
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ============================ 2. PARIS ============================ -->
+  <section class="section section-paris" id="paris">
+    <div class="paris-watermark" aria-hidden="true">
+      <svg viewBox="0 0 200 320" fill="none" stroke="#C9A24B" stroke-width="2" stroke-linejoin="round">
+        <path d="M100 10 L86 90 L60 160 H40 L30 220 H70 L60 280 H90 L86 312 H114 L110 280 H140 L130 220 H170 L160 160 H140 L114 90 Z"/>
+        <line x1="60" y1="160" x2="140" y2="160"/>
+        <line x1="40" y1="220" x2="170" y2="220"/>
+        <line x1="30" y1="220" x2="170" y2="220"/>
+      </svg>
+    </div>
+    <div class="paris-curve-bottom" aria-hidden="true"></div>
+
+    <div class="paris-grid">
+      <!-- LEFT: curved photo of Notre-Dame -->
+      <div class="paris-photo-wrap reveal" data-reveal="slide-right">
+        <div class="paris-photo" style="background-image:url('assets/notredame.jpg');"></div>
+        <div class="paris-photo-ring"></div>
+      </div>
+
+      <!-- RIGHT: text panel -->
+      <div class="paris-text">
+        <div class="eyebrow reveal"><span></span><em>TENTANG PARIS</em><span></span></div>
+        <h2 class="reveal" data-reveal-delay="80">Kota Romantis<br/>Penuh Sejarah</h2>
+        <p class="reveal" data-reveal-delay="160">
+          Paris, ibu kota Prancis, adalah kota yang terkenal dengan keindahan arsitektur,
+          sejarah yang kaya, dan budayanya yang mendunia. Dari Menara Eiffel hingga
+          katedral megah, Paris selalu menjadi destinasi impian banyak orang.
+        </p>
+        <hr class="gold-divider reveal" data-reveal-delay="200" />
+
+        <div class="features reveal" data-reveal-delay="240">
+          <div class="feature">
+            <span class="feature-ico">
+              
+<svg viewBox="0 0 24 24" fill="currentColor">
+  <path d="M11.2 2.5h1.6l.7 4.1 1.2 2.1.8 4.1 1.7 7.7h-4.1l.4 2H10.5l.4-2H6.8l1.7-7.7.8-4.1 1.2-2.1z"/>
+  <path d="M9 12h6M8.3 15h7.4M7.6 18h8.8" 
+        fill="none" stroke="#F5E9CE" stroke-width="1.2"/>
+</svg>
+<path d="M12 2 L10 9 L6 14 H9 L7.5 19 H12 V22 M12 2 L14 9 L18 14 H15 L16.5 19 H12" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>Ikon Dunia</strong><span>yang Mendunia</span></div>
+          </div>
+          <div class="feature-divider"></div>
+          <div class="feature">
+            <span class="feature-ico">
+              <svg viewBox="0 0 24 24"><path d="M3 20 H21 M5 20 V10 H8 V20 M10.5 20 V7 H13.5 V20 M16 20 V11 H19 V20 M3 20 V8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>Warisan Sejarah</strong><span>yang Kaya</span></div>
+          </div>
+          <div class="feature-divider"></div>
+          <div class="feature">
+            <span class="feature-ico">
+             
+<svg viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 21s-9-5.8-9-12a5 5 0 0 1 9-3.1A5 5 0 0 1 21 9c0 6.2-9 12-9 12z"/>
+  <path d="M7.5 9.5c.5-1.5 1.7-2.2 3-2.2"
+        fill="none" stroke="#F5E9CE"
+        stroke-width="1.3" stroke-linecap="round"/>
+</svg>
+<path d="M12 20 C12 20 4 13 4 8.5 A4 4 0 0 1 12 6 A4 4 0 0 1 20 8.5 C20 13 12 20 12 20 Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>Suasana Romantis</strong><span>yang Tak Tertandingi</span></div>
+          </div>
+        </div>
+
+        <a href="#menara" class="btn-pill btn-navy reveal" data-reveal-delay="320">
+          Pelajari Lebih Lanjut
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 3. MENARA EIFFEL ============================ -->
+  <section class="section section-menara" id="menara">
+    <div class="menara-watermark" aria-hidden="true">
+      <svg viewBox="0 0 200 320" fill="none" stroke="#C9A45C" stroke-width="2" stroke-linejoin="round" opacity="0.5">
+        <path d="M100 10 L86 90 L60 160 H40 L30 220 H70 L60 280 H90 L86 312 H114 L110 280 H140 L130 220 H170 L160 160 H140 L114 90 Z"/>
+        <line x1="60" y1="160" x2="140" y2="160"/>
+        <line x1="40" y1="220" x2="170" y2="220"/>
+      </svg>
+    </div>
+
+    <div class="menara-waves" aria-hidden="true">
+      <svg viewBox="0 0 900 220" preserveAspectRatio="none">
+        <path d="M900,40 C600,140 300,60 0,190 L0,220 L900,220 Z" fill="#152247"/>
+        <path d="M900,90 C650,180 350,110 0,215 L0,220 L900,220 Z" fill="#1B2A52"/>
+        <path d="M900,40 C600,140 300,60 0,190" fill="none" stroke="#C9A45C" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <div class="menara-grid">
+      <div class="menara-photo-wrap reveal" data-reveal="slide-left">
+        <div class="menara-photo" style="background-image:url('assets/eiffel_sunset.jpg');"></div>
+        <div class="menara-photo-ring"></div>
+      </div>
+
+      <div class="menara-text">
+        <div class="eyebrow reveal"><span></span><em>IKON PARIS</em><span></span></div>
+        <h2 class="reveal" data-reveal-delay="80">Menara Eiffel,<br/>Ikon Abadi Paris</h2>
+        <p class="lead reveal" data-reveal-delay="160">
+          Dibangun untuk Pameran Dunia 1889, Menara Eiffel menjadi simbol keindahan
+          dan kemajuan arsitektur Prancis. Dari puncaknya, Paris terbentang dalam
+          panorama yang memukau dan menjadikannya salah satu landmark paling dikenal di dunia.
+        </p>
+
+        <div class="stats reveal" data-reveal-delay="240">
+          <div class="stat-card">
+            <span class="stat-ico">
+             <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+  <circle cx="9" cy="8" r="3"/>
+  <path d="M3 20v-1a6 6 0 0 1 12 0v1"/>
+  <path d="M16 5a3 3 0 0 1 0 6"/>
+  <path d="M18 14a5 5 0 0 1 3 5v1"/>
+</svg>
+<circle cx="12" cy="9" r="3" fill="currentColor"/><path d="M5 19a3 3 0 1 1 0-6M19 19a3 3 0 1 0 0-6M12 13c-3 0-8 1.5-8 4v3h16v-3c0-2.5-5-4-8-4z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </span>
+            <div class="stat-label">Populasi Paris</div>
+            <span class="stat-dash"></span>
+            <div class="stat-value" data-count="2.1" data-suffix=" juta jiwa" data-decimals="1">0 juta jiwa</div>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-ico">
+             <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/>
+  <path d="M9 4v13.5M15 6.5V20"/>
+  <path d="m11 9 2-2 2 2-2 2z"/>
+</svg>
+<path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 0 0 5z" fill="currentColor"/></svg>
+            </span>
+            <div class="stat-label">Luas Kota Paris</div>
+            <span class="stat-dash"></span>
+            <div class="stat-value" data-count="105.4" data-suffix=" km²" data-decimals="1">0 km²</div>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-ico">
+<svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+  <rect x="3" y="5" width="18" height="16" rx="2"/>
+  <path d="M7 3v4M17 3v4M3 10h18"/>
+  <path d="m9 15 2 2 4-4"/>
+</svg>
+<path d="M19 4h-1V2h-2v2H8V2H6v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 16H5V9h14v11zM7 11h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2z" fill="currentColor"/></svg>
+            </span>
+            <div class="stat-label">Diresmikan di tahun</div>
+            <span class="stat-dash"></span>
+            <div class="stat-value" data-count="1889" data-suffix="" data-decimals="0">0</div>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-ico">
+             <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.8"
+     stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 8h18v12H3z"/>
+  <path d="M3 12h18"/>
+  <path d="M8 8V5a4 4 0 0 1 8 0v3"/>
+  <circle cx="12" cy="15.5" r="1.5"/>
+</svg>
+<circle cx="12" cy="9" r="3" fill="currentColor"/><path d="M5 19a3 3 0 1 1 0-6M19 19a3 3 0 1 0 0-6M12 13c-3 0-8 1.5-8 4v3h16v-3c0-2.5-5-4-8-4z" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </span>
+            <div class="stat-label">Pengunjung<br/>/ Tahun</div>
+            <span class="stat-dash"></span>
+            <div class="stat-value" data-count="6.75" data-suffix=" juta " data-decimals="2">0 juta  </div>
+          </div>
+        </div>
+
+        <div class="menara-cta-row reveal" data-reveal-delay="320">
+          <a href="#wisata" class="btn-pill btn-gold-outline">
+            Jelajahi Menara Eiffel
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 4. WISATA / DESTINASI ============================ -->
+  <section class="section section-wisata" id="wisata">
+    <div class="wisata-bg-eiffel" aria-hidden="true"></div>
+    <div class="wisata-ribbon" aria-hidden="true">
+      <svg viewBox="0 0 1400 200" preserveAspectRatio="none">
+        <path d="M0,120 C300,40 700,200 1100,90 C1250,60 1350,80 1400,120 L1400,200 L0,200 Z" fill="rgba(140,180,230,0.06)"/>
+      </svg>
+    </div>
+
+    <div class="wisata-header reveal">
+      <div class="eyebrow eyebrow-light"><span></span><em>DESTINASI UNGGULAN</em><span></span></div>
+      <h2 class="wisata-title">Ikon-Ikon Menakjubkan Paris</h2>
+      <div class="sparkle-divider" aria-hidden="true">
+        <span class="sparkle-line"></span>
+        <svg class="sparkle" viewBox="0 0 24 24"><path d="M12 2 L13.5 9 L20 10 L13.5 11 L12 18 L10.5 11 L4 10 L10.5 9 Z" fill="currentColor"/></svg>
+        <span class="sparkle-line"></span>
+      </div>
+    </div>
+
+    <div class="wisata-grid">
+      <article class="dest-card reveal" data-reveal-delay="0">
+        <div class="dest-img" style="background-image:url('assets/eiffel_night.jpg');"></div>
+        <div class="dest-bar">
+          <h3>Menara Eiffel</h3>
+          <a href="#" class="dest-arrow" aria-label="Lihat Menara Eiffel">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="dest-card reveal" data-reveal-delay="120">
+        <div class="dest-img" style="background-image:url('assets/louvree.jfif');"></div>
+        <div class="dest-bar">
+          <h3>Museum Louvre</h3>
+          <a href="#" class="dest-arrow" aria-label="Lihat Museum Louvre">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="dest-card reveal" data-reveal-delay="240">
+        <div class="dest-img" style="background-image:url('assets/Basilika Sacré-Cœur.jpg');"></div>
+        <div class="dest-bar">
+          <h3>Basilika Sacré-Cœur</h3>
+          <a href="#" class="dest-arrow" aria-label="Lihat Sacré-Cœur">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="dest-card reveal" data-reveal-delay="360">
+        <div class="dest-img" style="background-image:url('assets/katedral.jpg');"></div>
+        <div class="dest-bar">
+          <h3>Katedral Notre-Dame</h3>
+          <a href="#" class="dest-arrow" aria-label="Lihat Notre-Dame">
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ 5. GALERI ============================ -->
+  <section class="section section-galeri" id="galeri">
+    <div class="galeri-wave-top" aria-hidden="true">
+      <svg viewBox="0 0 1400 120" preserveAspectRatio="none">
+        <path d="M0,40 C300,110 700,10 1100,80 C1250,100 1350,70 1400,90 L1400,0 L0,0 Z" fill="#0E2A4E"/>
+        <path d="M0,40 C300,110 700,10 1100,80 C1250,100 1350,70 1400,90" fill="none" stroke="#C9A227" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="galeri-wave-bottom" aria-hidden="true">
+      <svg viewBox="0 0 1400 120" preserveAspectRatio="none">
+        <path d="M0,80 C300,10 700,110 1100,40 C1250,20 1350,50 1400,30 L1400,120 L0,120 Z" fill="#0E2A4E"/>
+        <path d="M0,80 C300,10 700,110 1100,40 C1250,20 1350,50 1400,30" fill="none" stroke="#C9A227" stroke-width="2"/>
+      </svg>
+    </div>
+    <div class="galeri-skyline" aria-hidden="true"></div>
+    <div class="galeri-stamp" aria-hidden="true">
+      <div class="stamp-circle">
+        <span class="stamp-top">PARIS ★ FRANCE</span>
+        <svg viewBox="0 0 24 32"><path d="M12 2 L10 9 L6 16 H9 L7.5 22 H12 V30 M12 2 L14 9 L18 16 H15 L16.5 22 H12" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+        <span class="stamp-bottom">★ PARIS ★</span>
+      </div>
+      <div class="stamp-cancel"></div>
+    </div>
+
+    <div class="galeri-grid">
+      <div class="galeri-text">
+<div class="eyebrow reveal">
+  <span></span>
+  <em>GALERI</em>
+  <span></span>
+</div>
+        <h2 class="reveal" data-reveal-delay="80">Pesona Paris<br/>dalam Setiap Sudut</h2>
+        <p class="reveal" data-reveal-delay="160">
+          <strong>Keindahan Paris terekam dalam galeri foto pilihan yang memukau.</strong> 
+        </p>
+        <a href="#" class="btn-pill btn-outline-navy reveal" data-reveal-delay="240">
+          Lihat Galeri
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="galeri-collage">
+        <div class="polaroid p1 reveal" data-reveal="zoom-rotate" style="background-image:url('assets/cafe.jpg');">
+          <span class="polaroid-cap">Café Parisien</span>
+        </div>
+        <div class="polaroid p2 reveal" data-reveal="zoom-rotate" data-reveal-delay="120" style="background-image:url('assets/berita_storm.jpg');">
+          <span class="polaroid-cap">Pont de Seine</span>
+        </div>
+        <div class="polaroid p3 reveal" data-reveal="zoom-rotate" data-reveal-delay="240" style="background-image:url('assets/lampuuu.jpg');">
+          <span class="polaroid-cap">Lampu Jalan</span>
+        </div>
+        <div class="polaroid p4 reveal" data-reveal="zoom-rotate" data-reveal-delay="360" style="background-image:url('assets/atap.webp');">
+          <span class="polaroid-cap">Atap Kota</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ 6. BERITA ============================ -->
+  <section class="section section-berita" id="berita">
+    <div class="berita-hero-bg" style="background-image:url('assets/eiffel-clouds.jpg');"></div>
+    <div class="berita-hero-vignette"></div>
+
+    <div class="berita-header reveal">
+      <h2 class="berita-title">KABAR TERKINI PARIS</h2>
+      <div class="sparkle-divider sparkle-light" aria-hidden="true">
+        <span class="sparkle-line"></span>
+        <svg class="sparkle" viewBox="0 0 24 24"><path d="M12 2 L13.5 9 L20 10 L13.5 11 L12 18 L10.5 11 L4 10 L10.5 9 Z" fill="currentColor"/></svg>
+        <span class="sparkle-line"></span>
+      </div>
+      <p class="berita-sub">Informasi dan peristiwa terbaru dari Paris dan sekitarnya</p>
+    </div>
+
+    <div class="berita-grid">
+      <article class="news-card reveal" data-reveal-delay="0">
+        <div class="news-img" style="background-image:url('assets/eiffel-clouds.jpg');"></div>
+        <span class="news-badge">CUACA</span>
+        <div class="news-body">
+          <h3>Paris Siaga Kuning Akibat Angin Kencang</h3>
+          <div class="news-meta"><span>📅</span> 17 Aug 2026 <i>|</i> Le Parisien</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="80">
+        <div class="news-img" style="background-image:url('assets/protest.webp');"></div>
+        <span class="news-badge">PERISTIWA</span>
+        <div class="news-body">
+          <h3>Rute Demonstrasi Nation–Place d'Italie Ditetapkan</h3>
+          <div class="news-meta"><span>📅</span> 21 Aug 2026 <i>|</i> BFMTV</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="160">
+        <div class="news-img" style="background-image:url('assets/metro.jpg');"></div>
+        <span class="news-badge">TRANSPORTASI</span>
+        <div class="news-body">
+          <h3>Mogok Transportasi Ganggu RER dan Metro</h3>
+          <div class="news-meta"><span>📅</span> 28 Aug 2026 <i>|</i> Franceinfo</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="240">
+        <div class="news-img" style="background-image:url('assets/hero-eiffel.jpg');"></div>
+        <span class="news-badge">WISATA</span>
+        <div class="news-body">
+          <h3>Mayoritas Destinasi Wisata Tetap Buka</h3>
+          <div class="news-meta"><span>📅</span> 3 Nov 2026 <i>|</i> Paris je t'aime</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="0">
+        <div class="news-img" style="background-image:url('assets/gallery.jpg');"></div>
+        <span class="news-badge">BUDAYA</span>
+        <div class="news-body">
+          <h3>Paris Photo Meriahkan Bulan Fotografi</h3>
+          <div class="news-meta"><span>📅</span> 9 Nov 2026 <i>|</i> Culturebox</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="80">
+        <div class="news-img" style="background-image:url('assets/icerink.jpg');"></div>
+        <span class="news-badge">HIBURAN</span>
+        <div class="news-body">
+          <h3>Arena Es Kembali di Parc André Citroën</h3>
+          <div class="news-meta"><span>📅</span> 15 Nov 2026 <i>|</i> Mairie de Paris</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="160">
+        <div class="news-img" style="background-image:url('assets/xmas.jpg');"></div>
+        <span class="news-badge">EVENT</span>
+        <div class="news-body">
+          <h3>Pasar Natal Mulai Semarakkan Paris</h3>
+          <div class="news-meta"><span>📅</span> 17 Nov 2026 <i>|</i> Le Parisien</div>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-reveal-delay="240">
+        <div class="news-img" style="background-image:url('assets/carnavalet.jpeg');"></div>
+        <span class="news-badge">MUSEUM</span>
+        <div class="news-body">
+          <h3>Family Weekend Hadir di Musée Carnavalet</h3>
+          <div class="news-meta"><span>📅</span> 19 Nov 2026 <i>|</i> Paris.fr</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================ 7. KONTAK ============================ -->
+  <section class="section section-kontak" id="kontak">
+    <div class="kontak-bg" style="background-image:url('assets/contact-paris.jpg');"></div>
+    <div class="kontak-overlay"></div>
+
+    <div class="kontak-header reveal">
+      <div class="eyebrow eyebrow-light"><em>KONTAK</em></div>
+      <h2 class="kontak-title"><span class="white">Hubungi</span> <span class="gold">Kami</span></h2>
+      <p class="kontak-sub">Kami siap membantu Anda untuk informasi lebih lanjut tentang Paris.</p>
+    </div>
+
+    <div class="kontak-grid">
+      <!-- LEFT: contact info cards -->
+      <div class="kontak-info">
+        <div class="info-card reveal" data-reveal-delay="0">
+          <span class="info-ico">
+<svg viewBox="0 0 24 24"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="1.8"
+     stroke-linecap="round"
+     stroke-linejoin="round"
+     aria-hidden="true">
+  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+  <circle cx="12" cy="10" r="2.5"/>
+</svg>
+          </span>
+          <div class="info-text"><strong>Alamat</strong><span>Paris, France</span></div>
+        </div>
+
+        <div class="info-card reveal" data-reveal-delay="100">
+          <span class="info-ico">
+            <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </span>
+          <div class="info-text"><strong>Email</strong><span>info@parisexplorer.com</span></div>
+        </div>
+
+        <div class="info-card reveal" data-reveal-delay="200">
+          <span class="info-ico">
+            <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a14 14 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A18 18 0 0 1 3 6 2 2 0 0 1 5 4z" fill="currentColor"/></svg>
+          </span>
+          <div class="info-text"><strong>Telepon</strong><span>+62 878 5587 3914</span></div>
+        </div>
+
+        <div class="info-card reveal" data-reveal-delay="300">
+          <span class="info-ico">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <div class="info-text"><strong>Jam Operasional</strong><span>Senin – Minggu, 08.00 – 22.00 (WIB)</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: form card -->
+      <div class="kontak-form-card reveal" data-reveal-delay="200">
+        <div class="form-head">
+          <span class="form-line"></span>
+          <h3>Kirim Pesan</h3>
+          <span class="form-line"></span>
+        </div>
+        <p class="form-sub">Isi formulir di bawah ini untuk menghubungi kami.</p>
+
+        <form class="kontak-form" id="kontakForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <span class="field-ico">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <input type="text" name="nama" placeholder="Nama Anda" required />
+            </div>
+            <div class="field">
+              <span class="field-ico">
+                <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <input type="email" name="email" placeholder="Email Anda" required />
+            </div>
+          </div>
+          <div class="field field-full">
+            <span class="field-ico">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16v12H4zM4 4l8 7 8-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <textarea name="pesan" rows="4" placeholder="Pesan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn-pill btn-submit">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 20l18-8L3 4l4 8-4 8zM7 12h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Kirim Pesan
+          </button>
+          <p class="form-feedback" id="formFeedback" hidden>Terima kasih! Pesan Anda telah dikirim. Kami akan segera menghubungi Anda.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+      <img src="assets/Tower.png"
+      alt="Logo Paris Explorer"
+      class="footer-logo" width="75" height="60">
+
+     <span>PARIS <em>EXPLORER</em></span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#dashboard">Beranda</a>
+        <a href="#paris">Sejarah</a>
+        <a href="#wisata">Wisata</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#berita">Berita</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2 0-3 1-3 3v3H8v4h3v6h4v-6h3l1-4h-4V8z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg></a>
+      </div>
+      <p class="footer-copy">© 2024 Paris Explorer | Imsanae Web. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Progress indicator -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"><span></span></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
